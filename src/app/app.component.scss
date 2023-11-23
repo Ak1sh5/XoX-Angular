@@ -1,0 +1,31 @@
+/* styles.scss */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .app-container {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  button {
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Add other global styles as needed */
+  

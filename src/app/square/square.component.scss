@@ -1,0 +1,13 @@
+button { width: 100%; height: 100%; font-size: 5em !important;} 
+
+  
+  button.x {
+    background-color: #66ff66; // Custom background color for 'X'
+    color: #333;              // Custom text color for 'X'
+  }
+  
+  button.o {
+    background-color: #66b3ff; // Custom background color for 'O'
+    color: #333;               // Custom text color for 'O'
+  }
+  
