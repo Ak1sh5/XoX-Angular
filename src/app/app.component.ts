@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tic-tac-toe';
+  isSinglePlayerGame = false;
+  isTwoPlayerGame = false;
+
+  startSinglePlayerGame() {
+    console.log('Single Player Game Selected');
+    this.isSinglePlayerGame = true;
+    this.isTwoPlayerGame = false;
+  }
+
+  startTwoPlayerGame() {
+    this.isSinglePlayerGame = false;
+    console.log('Two Player Game Selected');
+    this.isTwoPlayerGame = true;
+  }
 }

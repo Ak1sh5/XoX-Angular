@@ -1,6 +1,11 @@
-
-
+<!-- app.component.html -->
 <div class="app-container">
-    <app-board></app-board>
-  </div>
-  
+  <app-game-options-component
+  (singlePlayerGameSelected)="startSinglePlayerGame()"
+  (twoPlayerGameSelected)="startTwoPlayerGame()"
+></app-game-options-component>
+    
+  <app-single-player-game-component *ngIf="isSinglePlayerGame"></app-single-player-game-component>
+  <app-two-player-game-component *ngIf="isTwoPlayerGame">
+  </app-two-player-game-component>
+</div>
